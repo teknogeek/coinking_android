@@ -23,7 +23,6 @@ namespace coinking_android
 			SetContentView (Resource.Layout.Main);
 
 			// Create your application here
-
 			EditText apiKeyEditText = FindViewById<EditText>(Resource.Id.apiKey);
 			Button loadButton = FindViewById<Button>(Resource.Id.loadAPI);
 			ListView apiInfoListView = FindViewById<ListView>(Resource.Id.apiInfoList);
@@ -43,4 +42,3 @@ namespace coinking_android
 		}
 	}
 }
-

@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="coinking_android\apiParser.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="coinking_android\MainActivity.cs">
     <Files>
-      <File FileName="coinking_android\APIList.cs" Line="2" Column="2" />
-      <File FileName="coinking_android\apiParser.cs" Line="33" Column="33" />
+      <File FileName="coinking_android\apiParser.cs" Line="117" Column="117" />
+      <File FileName="coinking_android\MainActivity.cs" Line="6" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
