@@ -26,6 +26,7 @@ namespace coinking_android
 
 			EditText apiKeyEditText = FindViewById<EditText>(Resource.Id.apiKey);
 			Button loadButton = FindViewById<Button>(Resource.Id.loadAPI);
+			ListView apiInfoListView = FindViewById<ListView>(Resource.Id.apiInfoList);
 
 			string apiKey = string.Empty;
 				
@@ -35,12 +36,8 @@ namespace coinking_android
 
 				if(!String.IsNullOrWhiteSpace(apiKey))
 				{
-
-
 					List<string> apiInfo = coinking_android.apiParser.getApiInfo(apiKey);
-					var intent = new Intent(this, typeof(APIList));
-					intent.PutStringArrayListExtra("api_info", apiInfo);
-					StartActivity(intent);
+					apiInfoListView.Adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, apiInfo);
 				}
 			};
 		}

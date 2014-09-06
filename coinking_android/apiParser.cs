@@ -13,16 +13,19 @@ namespace coinking_android
 	{
 		public static List<string> getApiInfo(string apiKey)
 		{
-			WebRequest req = HttpWebRequest.Create("https://coinking.io/api.php?key=" + apiKey + "&type=myinfo&output=json");
+			List<string> apiInfoList = new List<string>();
 
+			WebRequest req = HttpWebRequest.Create("https://coinking.io/api.php?key=" + apiKey + "&type=myinfo&output=json");
 			using(Stream responseStream = req.GetResponse().GetResponseStream())
 			{
 				JsonObject userInfo = (JsonObject)JsonObject.Load(responseStream);
-				string currentCoin = userInfo["currentCoinNickname"];
 
-				List<string> apiInfoList = new List<string>();
+				string userHashrate = "Hashrate: " + userInfo["userHashrate"].ToString() + " KH/s";
+				string currentCoin = "Currently Mining: " + userInfo["currentCoinNickname"];
 
+				apiInfoList.Add(userHashrate);
 				apiInfoList.Add(currentCoin);
+
 				return apiInfoList;
 			}
 		}

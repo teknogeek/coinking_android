@@ -24,10 +24,6 @@ namespace coinking_android
 			global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 		}
 		
-		public static void UpdateIdValues()
-		{
-		}
-		
 		public partial class Attribute
 		{
 			
@@ -60,14 +56,14 @@ namespace coinking_android
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f050002
+			public const int apiInfoList = 2131034114;
+			
 			// aapt resource value: 0x7f050000
-			public const int apiInfoList = 2131034112;
+			public const int apiKey = 2131034112;
 			
 			// aapt resource value: 0x7f050001
-			public const int apiKey = 2131034113;
-			
-			// aapt resource value: 0x7f050002
-			public const int loadAPI = 2131034114;
+			public const int loadAPI = 2131034113;
 			
 			static Id()
 			{
